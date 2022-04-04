@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "email.h": "c",
+        "system_error": "c",
+        "algorithm": "c",
+        "argp.h": "c",
+        "errno.h": "c",
+        "typeinfo": "cpp",
+        "stdio.h": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "ranges": "c",
+        "utility": "c",
+        "pthread.h": "c",
+        "string.h": "c",
+        "message.h": "c",
+        "file.h": "c",
+        "config.h": "c"
+    }
+}

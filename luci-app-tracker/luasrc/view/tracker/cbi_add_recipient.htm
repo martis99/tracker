@@ -1,0 +1,43 @@
+<h3 class="content-title" onclick="toggleContent(this, 'tracker.recipient.toggle')">
+	<div class="toggle-arrow expanded"><img src="<%=media%>/img/icons/arrow-toggle.svg"></div>
+	Add Recipient
+</h3>
+<div class="table-wrapper table-addremove" id="tracker.recipient.toggle">
+	<table>
+		<thead>
+			<tr>
+				<th><%:Email address%></th>
+				<th><%:Phone number%></th>
+				<th><%:Validations%></th>
+				<th><%:Changes%></th>
+				<th><%:Errors%></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<input data-update="change" id="cbi.<%=self.config%>.<%=self.sectiontype%>.email" name="cbi.<%=self.config%>.<%=self.sectiontype%>.email" type="text" class="cbi-input-text" value="" maxlength="64" placeholder="someone@domain.com" data-type="email" data-optional="true" />
+				</td>
+				<td>
+					<input data-update="change" id="cbi.<%=self.config%>.<%=self.sectiontype%>.phone" name="cbi.<%=self.config%>.<%=self.sectiontype%>.phone" type="text" class="cbi-input-text" value="" maxlength="16" placeholder="+37000000000" data-type="phonedigit" data-optional="true" />
+				</td>
+				<td>
+					<input data-update="change" id="cbi.<%=self.config%>.<%=self.sectiontype%>.validations" name="cbi.<%=self.config%>.<%=self.sectiontype%>.validations" type="checkbox" class="cbi-input-text" value="1" data-optional="true" />
+				</td>
+				<td>
+					<input data-update="change" id="cbi.<%=self.config%>.<%=self.sectiontype%>.changes" name="cbi.<%=self.config%>.<%=self.sectiontype%>.changes" type="checkbox" class="cbi-input-text" value="1" data-optional="true" />
+				</td>
+				<td>
+					<input data-update="change" id="cbi.<%=self.config%>.<%=self.sectiontype%>.errors" name="cbi.<%=self.config%>.<%=self.sectiontype%>.errors" type="checkbox" class="cbi-input-text" value="1" data-optional="true" />
+				</td>
+				<td class="cbi-section-table-cell">
+					<input type="submit" class="btn" name="cbi.cts.<%=self.config%>.<%=self.sectiontype%>.<%=section%>" value="<%:Add%>" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+	checkToggled(document.getElementById("tracker.recipient.toggle"), "tracker.recipient.toggle")
+</script>
